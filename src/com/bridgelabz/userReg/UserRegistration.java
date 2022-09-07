@@ -59,11 +59,12 @@ public class UserRegistration {
 	
 	public void password() { 
 		/*method to pre defined password rule minimum 8 characters
-		 *  and atleast 1 numeric UC7
+		 *  and atleast 1 numeric
+		 *  exactly 1 speacial character UC8
 		 * */
 			System.out.println("Enter the Password: ");
 			String password = sc.next();
-			boolean result = Pattern.matches("[A-Z]+[A-z0-9]{6,}[0-9]+", password);
+			boolean result = Pattern.matches("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d@$!%*#?&^_-]{8,}$", password);
         
 				if (result) {
 					System.out.println("Success");
