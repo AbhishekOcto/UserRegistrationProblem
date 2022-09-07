@@ -29,5 +29,17 @@ public class UserRegistration {
         else 
             System.out.println("please enter valid last name ");
     }
-
-}
+	
+	public void email(){ //method to enter valid emailId UC3
+		/*Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with
+		precise @ and . positions
+		 */
+        	System.out.print("Enter email ID: " );
+        	String Email = sc.next();
+        	Boolean result = Pattern.matches("^[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)$",Email);
+        		if (result)
+        			System.out.println("Success");
+        		else 
+        			System.out.println("Please enter valid email Id");
+					}
+	}
