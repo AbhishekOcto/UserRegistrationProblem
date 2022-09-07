@@ -9,7 +9,7 @@ public class UserRegistrationMain {
 		UserRegistration userReg = new UserRegistration();
 		int option;
 		while (true) {
-		System.out.print("1.First Name\n2.Last Name\n3.Email\n4.Phone Number\n5.Exit");
+		System.out.print("1.First Name\n2.Last Name\n3.Email\n4.Phone Number\n5.Enter Password\n6.Exit");
 		System.out.println("\nEnter option number: ");
 		option = sc.nextInt();
 		
@@ -27,6 +27,8 @@ public class UserRegistrationMain {
 			userReg.contactNumber();
 			break;
 		case 5:
+			userReg.Password();
+		case 6:
 			System.exit(0);
 			break;
 		   }

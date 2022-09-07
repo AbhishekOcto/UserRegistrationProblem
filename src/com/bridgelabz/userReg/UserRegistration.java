@@ -56,4 +56,17 @@ public class UserRegistration {
 			System.out.println("enter valid contact number");
 		System.out.println(ContactNumber);
 	}
+	
+	public void Password() { //method to pre defined password rule UC5
+        System.out.println("Enter the Password: ");
+        String password = sc.next();
+        boolean result = Pattern.matches("[A-z0-9]{8,}", password);
+        
+        if (result) {
+            System.out.println("Success");
+        } else {
+            System.out.println("Enter valid password..");
+        }
+        System.out.println("Your password is: " +password);
+	}
 }
