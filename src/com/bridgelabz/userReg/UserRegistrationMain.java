@@ -5,6 +5,7 @@ public class UserRegistrationMain {
 	public static void main(String[] args) {
 		UserRegistration userReg = new UserRegistration();
 		userReg.firstName();
+		userReg.lastName();
 
 	}
 
