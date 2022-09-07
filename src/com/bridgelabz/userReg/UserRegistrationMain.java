@@ -27,7 +27,7 @@ public class UserRegistrationMain {
 			userReg.contactNumber();
 			break;
 		case 5:
-			userReg.Password();
+			userReg.password();
 		case 6:
 			System.exit(0);
 			break;
