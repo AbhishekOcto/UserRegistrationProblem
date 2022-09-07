@@ -6,6 +6,7 @@ public class UserRegistrationMain {
 		UserRegistration userReg = new UserRegistration();
 		userReg.firstName();
 		userReg.lastName();
+		userReg.email();
 
 	}
 
