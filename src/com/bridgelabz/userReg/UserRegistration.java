@@ -57,16 +57,19 @@ public class UserRegistration {
 		System.out.println(ContactNumber);
 	}
 	
-	public void Password() { //method to pre defined password rule UC5
-        System.out.println("Enter the Password: ");
-        String password = sc.next();
-        boolean result = Pattern.matches("[A-z0-9]{8,}", password);
+	public void password() { 
+		/*method to pre defined password rule minimum 8 characters
+		 *  and atleast 1 upper case UC6
+		 * */
+			System.out.println("Enter the Password: ");
+			String password = sc.next();
+			boolean result = Pattern.matches("[A-Z]+[A-z0-9]{7,}", password);
         
-        if (result) {
-            System.out.println("Success");
-        } else {
-            System.out.println("Enter valid password..");
-        }
-        System.out.println("Your password is: " +password);
+				if (result) {
+					System.out.println("Success");
+				} else {
+					System.out.println("Enter valid password..");
+				}
+					System.out.println("Your password is: " +password);
+			}
 	}
-}
