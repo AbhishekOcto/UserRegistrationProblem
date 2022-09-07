@@ -42,4 +42,18 @@ public class UserRegistration {
         		else 
         			System.out.println("Please enter valid email Id");
 					}
+	
+	public void contactNumber(){ //method to enter valid mobile number UC4
+		/*Mobile Format - E.g. 91 9919819801 - Country code follow by space and 10 digit number*/
+		
+		System.out.print("Enter contact number with country code (91): " );
+		String ContactNumber = sc.next();
+		
+		boolean result = Pattern.matches("^\\d{2}\\s?\\d{10,}$",ContactNumber);
+		if (result)
+			System.out.println("Success");
+		else
+			System.out.println("enter valid contact number");
+		System.out.println(ContactNumber);
 	}
+}
